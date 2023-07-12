@@ -1,0 +1,127 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content:right;
+    flex-wrap: wrap;
+    background-color: beige;
+    list-style: none;
+    flex-direction: row;
+}
+
+.container>li a{
+    padding: 30px;
+    font-size: 30px;
+    text-decoration:none  ;
+    color: black;
+    display: block;
+    background-color: beige;
+    text-transform: uppercase;
+    font-family: 'Bruno Ace', cursive;
+    font-weight: bold;
+}
+
+.container>li :hover{
+    color: greenyellow;
+    background-color: bisque;
+    transition: 0.3s;
+}
+
+@media all and (max-width: 800px){
+    .container{
+        justify-content:space-around;
+    }
+    .container>li a{
+        font-size: 22px;
+    }
+}
+
+@media all and (max-width: 600px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container>li a{
+        font-size: 15px;
+        
+    }
+}
+.left a{
+    color: black;
+    text-decoration: none;
+}
+.left{
+    display: flex;
+    justify-content:left;
+    flex-direction: row;
+    padding: 40px;
+    background-color: antiquewhite;
+    margin-top: 10px;
+}
+ .p1{
+    align-items: end;
+    /* //neden olmuyor bu kod  */
+    text-align: justify;
+    
+
+}
+.right{
+    display: flex;
+    justify-content:left;
+    flex-direction: row-reverse;
+    padding: 40px;
+    background-color: antiquewhite;
+    margin-top: 10px;
+}
+.wcom{
+    display: flex;
+    justify-content:left;
+    flex-direction: row;
+    padding: 40px;
+    background-color: antiquewhite;
+    margin-top: 10px;
+    
+}
+.wcom #parag{
+    display: flex;
+    
+    padding: 40px;
+    flex-direction: column;
+    justify-content:right;
+    background-color: antiquewhite;
+    margin-top: 10px;
+}
+#parag li {
+    display: flex;
+    justify-content: right;
+    
+    list-style: none;
+}
+.logo a{
+    color: black;
+    text-decoration: none;
+}
+
+@media all and (max-width: 600px){
+    .wcom .p1,#parag{
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+    }
+    
+    }
+h1{
+    margin-bottom: 10px;
+}
+p{
+    font-family: 'Judson', serif;
+}
+#zd{
+    background-color: black;
+    color: whitesmoke;
+    
+}
+    
