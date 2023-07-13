@@ -9,15 +9,27 @@
 </head>
 <body>
     <div class="container">
-        <div class="top1">a</div>
+        <div id="top1">a</div>
         <div class="top2">b</div>
         <div class="bottom1">c</div>
         <div class="bottom2">d</div>
         <div class="footer">e</div>
+        <button onclick="changeblokcolor()">tıkla</button>
+        <button onclick="deletechanges()">tıkla</button>
+
     </div>
 
 
 
-
+<script>
+function changeblokcolor(){
+    var element=document.getElementById("top1");
+    element.style.backgroundColor="yellow";
+}
+function deletechanges(){
+    var element=document.getElementById("top1");
+    element.style.backgroundColor="purple";
+}
+</script>
 </body>
 </html>
