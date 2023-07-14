@@ -73,7 +73,9 @@
             var element = document.getElementById("btn");
             element.style.backgroundColor = "yellow";
             element.style.color = "black";
-            element.style.transition = "0.7s";  }
+            element.style.transition = "0.7s"; 
+            alert("downing...");
+        }
     </script>
     </div>
     <div id="contact">
@@ -81,19 +83,29 @@
         <hr class="line4">
         <div class="contform" >
             <input type="text" id="name" 
-            placeholder="name:"
+            placeholder="name:">
         </div>
+
         <div class="contform">
             <input type="text" id="email"
-            placeholder="email:"
+            placeholder="email:">
         </div>
-        <!-- <div class="contform">
+        <div class="contform">
             <textarea id="message" rows="6"
-            placeholder="message:"
-        </div> -->
-        <button id="btn2" onclick="changeBackground()">sent</button>
+            placeholder="message:"></textarea>
+        </div>
+        <button id="btn2" onclick="change()">sent to me</button>
     </div>
-
+    <script>
+        function change() {
+            var element = document.getElementById("btn2");
+            element.style.backgroundColor = "yellow";
+            element.style.color = "black";
+            element.style.transition = "0.7s";
+            alert(" your message sented");
+        }
+    </script>
+ 
     <div id="footer">
         <div class="location">
             <h3>location</h3>
@@ -112,6 +124,5 @@
             <h3>about me</h3>
         </div>
     </div>
-    
 
 </body>
