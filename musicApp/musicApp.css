@@ -207,6 +207,10 @@ button{
     width: 450,150;
     background-color: rgb(35, 120, 148,0.4);
 }
+#itm9:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
 #itm10{
     grid-area: itm10;
     display: flex;
@@ -217,6 +221,10 @@ button{
     padding: 60px;
     width: 450,150;
     background-color: rgb(35, 120, 148);
+}
+#itm10:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
 }
 #itm11{
     grid-area: itm11;
@@ -229,7 +237,10 @@ button{
     width: 450,150;
     background-color: rgb(35, 120, 148,0.4);
 }
-
+#itm11:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
 
 footer{
     margin-top: 30px;
@@ -345,10 +356,15 @@ button{
     
 }
 
-.n1,.n2,.n3{
+.n{
     display: flex;
     flex-wrap: wrap;
     flex-basis: 25% 25% 25%;
+    cursor: pointer;
+}
+.n img:hover{
+    transform: translateY(-20px);
+    transition: 0.3s;
 }
 /* .bg{
     background-color: black;
