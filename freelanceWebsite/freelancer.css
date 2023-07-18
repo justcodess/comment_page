@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+ 
 #head{
     display: flex;
     flex-direction: row;
@@ -275,6 +276,7 @@ img{
 #footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     height: 150px;
