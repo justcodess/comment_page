@@ -8,7 +8,7 @@ header{
     height: 100px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
     justify-content: space-between; 
     position: fixed !important;
     top:0;
@@ -18,6 +18,7 @@ header{
 header h1{
     padding: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 nav{
@@ -86,7 +87,7 @@ h2{
     flex-direction:row;
     justify-items: center;
     padding: 30px;
-    width: 80vh;
+    width: 80%;
     margin: auto;
 }
 #pln1,#pln2,#pln3{
@@ -148,6 +149,7 @@ button{
 }
 #premium{
     margin: auto;
+    text-align: center;
     font-size: 30px;
     text-transform: uppercase;
     padding: 30px;}
@@ -246,7 +248,6 @@ footer{
     background-color:rgb(0,81,107) ;
     height: 6vh;
     
-    
 }
 #foot{
     display: flex;
@@ -267,6 +268,128 @@ footer{
     font-size: 13px;
     padding: 6px;
 }
-@media all and(max-width:830px) {
+@media all and (max-width: 768px) {
+    header{
+      
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+    }
+    #thirdy{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        width: 55vh;
+        margin: auto;
+    }
+    .n1,.n2,.n3{
+        padding: 90px;
+        box-shadow: 5px 5px 5px 5px gray;
+    }
+    .n1:hover ,.n2:hover ,.n3:hover{
+        transform: translateY(-4px);
+        transition: 0.3s;
+    }
+    .plans{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+
+    }
+    p{
+        font-size: 16px;
+    }
+    #view{
+        padding: 40px;
+    }
+}
+@media all and (max-width: 570px) {
+    header{
+      
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+    }
+    #thirdy{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        width: 37vh;
+        margin: auto;
+    }
+    .n1,.n2,.n3{
+        padding: 60px;
+        box-shadow: 5px 5px 5px 5px gray;
+    }
+    .n1:hover ,.n2:hover ,.n3:hover{
+        transform: translateY(-4px);
+        transition: 0.3s;
+    }
+    .plans{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+
+    }
+    p{
+        font-size: 16px;
+    }
+    #view{
+        padding: 18px;
+    }
+    #content a,#logos a{
+        font-size: 12px;
+    }
+    #skortable h2{
+        font-size: 15px;
+    }
+    
+}
+@media all and (max-width: 400px) {
+    header{
+      
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+    }
+    #thirdy{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        width: 37vh;
+        margin: auto;
+        padding-right: 30px;
+    }
+    .n1,.n2,.n3{
+        width: 160px;
+        margin: auto;
+        padding: 60px;
+        
+    }
+    .n1:hover ,.n2:hover ,.n3:hover{
+        transform: translateY(-4px);
+        transition: 0.3s;
+    }
+    .plans{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+
+    }
+    button{
+        padding: 0;
+    }
+    p{
+        font-size: 14px;
+    }
+    #view{
+        padding: 10px;
+    }
+    #skortable h2{
+        font-size: 12px;
+    }
+    #content a,#logos a{
+        font-size: 10px;
+    }
     
 }
