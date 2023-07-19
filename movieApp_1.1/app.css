@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(0,81,107);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    position: fixed !important;
+    top:0;
+    z-index: 100;
+    
+}
+header h1{
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+nav{
+    padding: 30px;
+    font-size: 20px;
+}
+nav a{
+    padding: 10px;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: rgb(250, 235, 215,0.3);
+    transition: 0.3s;
+}
+#showcase{
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/summer-movies-1587392939.jpg ");
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+#showcase h1{
+    color: black;
+    background-color: rgba(88, 88, 86, 0.8);
+    height: fit-content;
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    margin: auto;
+    text-transform: uppercase;
+    transform:translate(-50%,10px);
+    font-size: 50px;
+}
+#plan{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+   
+}
+#plan a,h3{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(5, 81, 139);
+}
+.how{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: auto;
+    text-align: center;
+}
+h2{
+    margin: auto;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+.plans{
+    display: flex;
+    flex-direction:row;
+    justify-items: center;
+    padding: 30px;
+    width: 80vh;
+    margin: auto;
+}
+#pln1,#pln2,#pln3{
+    padding: 10px;
+    text-align: justify;
+}
+
+#twice{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 40vh;
+    padding: 30px;
+    background-color: rgb(12,139,171)
+    ;
+}
+#viewimg{
+    background-color: black;
+    background-image: url("https://media.glamour.com/photos/56957a138fa134644ec21f46/16:9/w_2580,c_limit/entertainment-2014-02-03-titanic-main.jpg");
+    background-size: cover;
+    width: 100%;
+}
+#view{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: auto;
+}
+h4{
+    margin: auto;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+    margin: auto;
+}
+button{
+    padding: 15px;
+    font-size: 15px;
+    
+}
+#payplan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+#thirdy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    width: 80vh;
+    margin: auto;
+}
+#premium{
+    margin: auto;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 30px;}
+.n1,.n2,.n3{
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2%;
+    box-shadow: 5px 10px 15px 5px rgb(240, 248, 255);
+    background-color: rgb(35, 120, 148,0.4);
+}
+.n1:hover ,.n2:hover ,.n3:hover{
+    transform: translateY(-20px);
+    transition: 0.3s;
+}
+.paybadge{
+    background-color: rgb(240, 248, 255,0.3);
+    color: red;
+    padding: 10px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+#scroll{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 50px; 
+    height: 50px; 
+    font-size: 20px;
+    margin-left: 5px;
+   
+}
+
+/* kullanıcı scrolu aşağıya çekince 
+bu buton ortaya çıkmalı js kodunu öğren */
+
+#scroll a{
+    color: rgb(90,18,148);
+}
+#scroll a:hover{
+    color: rgb(90,18,148,0.7);
+    transition: .6s;
+}
+#skortable{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    padding: 30px;
+    background-color: rgb(12,139,171);
+}   
+.skor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#lastmovie{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#topside{
+    text-align: center;
+    padding: 40px;
+}
+#bottomside{
+    display: grid;
+    overflow-y: scroll;
+    grid-template-columns:repeat(100,1fr);
+    grid-template-rows: 1fr;
+}
+.movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vh;
+    
+}
+.movie:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+.movie button{
+    margin: auto;
+    width: fit-content;
+    
+}
+footer{
+    background-color:rgb(0,81,107) ;
+    height: 6vh;
+    
+    
+}
+#foot{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    padding: 13px;
+    justify-content: space-between;
+}
+#content a{
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    font-size: 17px;
+}
+#logos a{
+    color: white;
+    font-size: 13px;
+    padding: 6px;
+}
+@media all and(max-width:830px) {
+    
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid table</title>
+
+    <style>
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(400px,600px));
+            grid-template-rows: repeat(auto,300px);
+            background-color: gray;
+            gap: 10px;
+           
+            
+            /* .n1{grid-area: n1;
+            background-color: red;}
+            .n2{grid-area: n2;
+            background-color: green;}
+            .n3{grid-area: n3;
+            background-color: pink;}
+            .n4{grid-area: n4;
+            background-color: yellow;}
+            .n5{grid-area: n5;
+            background-color: blue;}
+            .n6{grid-area: n6;
+            background-color: gray;}*/
+            .n{
+                background-color: yellow;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div class="n">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, optio. Tempora atque adipisci facere earum impedit, quas reiciendis consequatur minima reprehenderit assumenda nesciunt, dignissimos maiores. Nobis, ad placeat? Perferendis, iusto.lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut eligendi voluptas laudantium vel nihil, impedit animi nam facilis ex ullam perferendis sunt sequi quidem cumque commodi optio et? Omnis, harum!</div>
+        <div class="n">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique iure beatae obcaecati dolorum, necessitatibus incidunt ut fuga, explicabo iste accusamus atque consequatur. Earum accusantium, aspernatur perspiciatis rerum saepe debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio libero sequi doloribus saepe dolor! Hic fugit sed reprehenderit. Inventore accusamus sapiente amet molestiae a maiores, nulla aperiam soluta et nostrum!</div>
+        <div class="n">3</div>
+    </div>
+</body>
+</html>
