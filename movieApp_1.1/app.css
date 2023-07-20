@@ -305,10 +305,16 @@ footer{
 }
 @media all and (max-width: 570px) {
     header{
-      
+        display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-       
+        height: fit-content;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
     }
     #thirdy{
         display: flex;
@@ -317,6 +323,9 @@ footer{
         padding: 10px;
         width: 37vh;
         margin: auto;
+    }
+    #showcase{
+        margin-top: 150px;
     }
     .n1,.n2,.n3{
         padding: 60px;

@@ -94,6 +94,7 @@ p{
     "itm8 itm8 itm8 itm8 itm8 itm8"
     "itm9 itm9 itm10 itm10 itm11 itm11"
     "itm9 itm9 itm10 itm10 itm11 itm11";
+
 }
 #content a{
     display: flex;
@@ -372,8 +373,7 @@ button{
  @media all and (max-width:768px) {
     #content{
         display: grid;
-        grid-template-columns:repeat(3,1fr);
-        grid-template-rows: repeat(10,1fr);
+        grid-template-columns:repeat(3,1fr);        
         gap: 20px;
         grid-template-areas: 
         "itm1 itm1 itm1"

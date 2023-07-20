@@ -1,0 +1,75 @@
+:root{
+    --primary: #444141;
+    --secondary:rgb(254,214,140);
+}
+.text-primary { color: var(--primary);}
+.text-secondary { color: var(--secondary);}
+
+.bg-primary { color: var(--primary);}
+.bg-secondary { color: var(--secondary);}
+
+.btnhead{
+    cursor: pointer;
+    padding: 10px 30px;
+    border: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    background: rgba(58, 55, 55, 0.705);
+}
+.btnhead:hover{
+    opacity: 0.3;
+}
+.btn{
+    margin: auto;
+    cursor: pointer;
+    padding: 10px 30px;
+    color: whitesmoke;
+    border-radius: 5px;
+    background: rgba(58, 55, 55, 0.705);
+}
+.btn:hover{
+    opacity: 0.3;
+}
+.btn-primary{
+    color: var(--primary);
+    background-color: var(--primary);
+}
+.text-secondary{
+    color: var(--secondary);
+}
+a{
+    font-size: 17px;
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: capitalize;
+}
+a:hover{
+    color: rgb(240, 248, 255,0.3);
+    text-decoration: 3px  underline solid var(--secondary);
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    text-decoration: overline;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+.flexorder{
+    display: flex;
+    order: 1;
+}
+#logos{
+    color: white;
+    margin: auto;
+    font-size: 10px;
+}
+
+
